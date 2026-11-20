@@ -11,7 +11,7 @@ import heroImage from "@/assets/hero-map-lens.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "LocalRankLens — score any Google Business Profile in minutes" },
+      { title: "LocalRankLens" },
       {
         name: "description",
         content:
