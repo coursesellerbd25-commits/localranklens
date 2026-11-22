@@ -9,16 +9,16 @@ import { AUDIT_CATEGORIES } from "@/lib/audit/types";
 export const Route = createFileRoute("/features")({
   head: () => ({
     meta: [
-      { title: "Features — what a LocalRankLens audit covers" },
+      { title: "Features — what a RankLens audit covers" },
       {
         name: "description",
         content:
           "26 weighted checks across profile completeness, categories, reviews, photos, activity and citations — plus saved locations, printable reports and score history.",
       },
-      { property: "og:title", content: "Features — LocalRankLens" },
+      { property: "og:title", content: "Features — RankLens" },
       {
         property: "og:description",
-        content: "Every check, category weighting and reporting feature in a LocalRankLens audit.",
+        content: "Every check, category weighting and reporting feature in a RankLens audit.",
       },
       { property: "og:url", content: "/features" },
     ],
@@ -59,7 +59,7 @@ function FeaturesPage() {
     <SiteShell>
       <PageHeader
         eyebrow="Features"
-        title="Everything in a LocalRankLens audit"
+        title="Everything in a RankLens audit"
         description={`${CHECKS.length} weighted checks across ${AUDIT_CATEGORIES.length} categories, plus the reporting and account tools around them.`}
       >
         <Button asChild>

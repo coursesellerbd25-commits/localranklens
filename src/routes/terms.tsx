@@ -6,13 +6,13 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms of Service — LocalRankLens" },
+      { title: "Terms of Service — RankLens" },
       {
         name: "description",
         content:
           "The terms covering accounts, acceptable use, plan limits, no ranking guarantees, liability and termination. Template to be reviewed before commercial use.",
       },
-      { property: "og:title", content: "Terms of Service — LocalRankLens" },
+      { property: "og:title", content: "Terms of Service — RankLens" },
       { property: "og:description", content: "Accounts, acceptable use, limits and liability." },
       { property: "og:url", content: "/terms" },
     ],

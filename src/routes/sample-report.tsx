@@ -10,16 +10,16 @@ import { SAMPLE_AUDIT_INPUT } from "@/lib/audit/samples";
 export const Route = createFileRoute("/sample-report")({
   head: () => ({
     meta: [
-      { title: "Sample audit report — LocalRankLens" },
+      { title: "Sample audit report — RankLens" },
       {
         name: "description",
         content:
-          "A complete example LocalRankLens report: overall score, category breakdown, prioritised actions and all 26 checks, generated from demo data.",
+          "A complete example RankLens report: overall score, category breakdown, prioritised actions and all 26 checks, generated from demo data.",
       },
       { property: "og:title", content: "Sample Google Business Profile audit report" },
       {
         property: "og:description",
-        content: "See exactly what a LocalRankLens report contains before signing up.",
+        content: "See exactly what a RankLens report contains before signing up.",
       },
       { property: "og:url", content: "/sample-report" },
     ],

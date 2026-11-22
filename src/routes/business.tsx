@@ -7,13 +7,13 @@ import { CHECKS } from "@/lib/audit/engine";
 export const Route = createFileRoute("/business")({
   head: () => ({
     meta: [
-      { title: "Business overview for buyers — LocalRankLens" },
+      { title: "Business overview for buyers — RankLens" },
       {
         name: "description",
         content:
-          "What LocalRankLens is, who it serves, how it makes money, the stack it runs on, what operating it involves, and where an owner could grow it.",
+          "What RankLens is, who it serves, how it makes money, the stack it runs on, what operating it involves, and where an owner could grow it.",
       },
-      { property: "og:title", content: "Business overview — LocalRankLens" },
+      { property: "og:title", content: "Business overview — RankLens" },
       {
         property: "og:description",
         content: "Product, audience, model, stack, operating requirements and growth options.",
@@ -48,7 +48,7 @@ function BusinessPage() {
       <Prose>
         <h2>What it does</h2>
         <p>
-          LocalRankLens scores a Google Business Profile against {CHECKS.length} weighted local
+          RankLens scores a Google Business Profile against {CHECKS.length} weighted local
           search checks and returns a prioritised list of fixes. The person running the audit records
           what they can see on the profile; the engine does the grading, consistently, every time.
         </p>

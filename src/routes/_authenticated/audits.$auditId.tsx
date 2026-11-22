@@ -11,7 +11,7 @@ import type { AuditCategory, CategoryScore, CheckStatus, Finding } from "@/lib/a
 
 export const Route = createFileRoute("/_authenticated/audits/$auditId")({
   head: () => ({
-    meta: [{ title: "Audit report — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Audit report — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: AuditDetailPage,
 });

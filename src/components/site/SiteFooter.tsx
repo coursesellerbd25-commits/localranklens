@@ -71,7 +71,7 @@ export function SiteFooter() {
         ))}
       </div>
       <div className="container-page flex flex-col gap-2 border-t border-border py-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} LocalRankLens. Not affiliated with Google.</p>
+        <p>© {new Date().getFullYear()} RankLens. Not affiliated with Google.</p>
         <p>Audit scoring is guidance based on published local search best practice.</p>
       </div>
     </footer>

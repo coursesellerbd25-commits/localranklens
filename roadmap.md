@@ -1,4 +1,4 @@
-# Roadmap — Website SEO audit engine (extends LocalRankLens)
+# Roadmap — Website SEO audit engine (extends RankLens)
 
 1. [x] Inspect codebase, schema, auth, engine, plans
 2. [x] Database: website_audits, website_audit_findings, psi_cache (+RLS, grants, usage function) — applied on this project's backend

@@ -13,7 +13,7 @@ export const Route = createFileRoute("/guides/$slug")({
   head: ({ loaderData, params }) => {
     if (!loaderData) {
       return {
-        meta: [{ title: "Guide unavailable — LocalRankLens" }, { name: "robots", content: "noindex" }],
+        meta: [{ title: "Guide unavailable — RankLens" }, { name: "robots", content: "noindex" }],
       };
     }
     const { guide } = loaderData;
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/guides/$slug")({
             headline: guide.title,
             description: guide.description,
             dateModified: guide.updated,
-            author: { "@type": "Organization", name: "LocalRankLens" },
+            author: { "@type": "Organization", name: "RankLens" },
           }),
         },
       ],
@@ -95,7 +95,7 @@ function GuidePage() {
 
         <h2>Score this profile</h2>
         <p>
-          A LocalRankLens audit turns everything above into a 0–100 score with the fixes ranked by
+          A RankLens audit turns everything above into a 0–100 score with the fixes ranked by
           impact. The free plan covers three audits a month.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">

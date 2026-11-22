@@ -17,7 +17,7 @@ import { classifySourceUrl, MAX_SOURCES, SOURCE_LABELS, SOURCE_TYPES, validateSu
 export const Route = createFileRoute("/_authenticated/verify/new")({
   validateSearch: z.object({ from: z.string().uuid().optional() }),
   head: () => ({
-    meta: [{ title: "Verify a business — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Verify a business — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: VerifyNewPage,
 });

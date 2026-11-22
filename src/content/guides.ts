@@ -81,7 +81,7 @@ export const GUIDES: Guide[] = [
       {
         heading: "Turn this into a scored checklist",
         paragraphs: [
-          "Running these checks by hand takes about an hour per profile and the result depends on who looked. A LocalRankLens audit applies the same 26 weighted checks every time and ranks the fixes by impact, so you start with the ones that actually move the needle.",
+          "Running these checks by hand takes about an hour per profile and the result depends on who looked. A RankLens audit applies the same 26 weighted checks every time and ranks the fixes by impact, so you start with the ones that actually move the needle.",
         ],
       },
     ],
@@ -96,7 +96,7 @@ export const GUIDES: Guide[] = [
     updated: "2026-01-01",
     readingMinutes: 9,
     intro:
-      "This is the checklist the LocalRankLens engine encodes. Work top to bottom; each group is ordered roughly by how much it is worth.",
+      "This is the checklist the RankLens engine encodes. Work top to bottom; each group is ordered roughly by how much it is worth.",
     sections: [
       {
         heading: "Profile completeness",

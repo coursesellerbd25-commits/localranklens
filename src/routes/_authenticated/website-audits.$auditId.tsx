@@ -11,7 +11,7 @@ import type { Priority, SiteCheckStatus } from "@/lib/site-audit/types";
 
 export const Route = createFileRoute("/_authenticated/website-audits/$auditId")({
   head: () => ({
-    meta: [{ title: "Website audit report — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Website audit report — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: WebsiteAuditDetailPage,
 });

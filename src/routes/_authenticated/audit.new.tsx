@@ -16,7 +16,7 @@ import { listLocations } from "@/lib/api/locations.functions";
 export const Route = createFileRoute("/_authenticated/audit/new")({
   validateSearch: z.object({ verification: z.string().uuid().optional() }),
   head: () => ({
-    meta: [{ title: "New audit — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "New audit — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: NewAuditPage,
 });

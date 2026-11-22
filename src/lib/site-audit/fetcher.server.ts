@@ -45,7 +45,7 @@ export interface FetchSuccess {
 export type PageFetchResult = FetchSuccess | FetchFailure;
 
 const USER_AGENT =
-  "Mozilla/5.0 (compatible; LocalRankLensAuditBot/1.0; +https://localranklens.lovable.app/bot)";
+  "Mozilla/5.0 (compatible; RankLensAuditBot/1.0; +https://RankLens.lovable.app/bot)";
 
 interface DoHAnswer {
   type?: number;

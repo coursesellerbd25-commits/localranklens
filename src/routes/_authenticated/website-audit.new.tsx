@@ -16,7 +16,7 @@ import { createWebsiteAudit } from "@/lib/api/website-audits.functions";
 export const Route = createFileRoute("/_authenticated/website-audit/new")({
   validateSearch: z.object({ verification: z.string().uuid().optional() }),
   head: () => ({
-    meta: [{ title: "New website audit — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "New website audit — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: NewWebsiteAuditPage,
 });

@@ -11,13 +11,13 @@ import heroImage from "@/assets/hero-map-lens.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "LocalRankLens" },
+      { title: "RankLens" },
       {
         name: "description",
         content:
           "Audit a Google Business Profile against 26 weighted local ranking checks, get a prioritised fix list, and track the score over time. Free plan, no card needed.",
       },
-      { property: "og:title", content: "LocalRankLens — Google Business Profile audits" },
+      { property: "og:title", content: "RankLens — Google Business Profile audits" },
       {
         property: "og:description",
         content:
@@ -62,7 +62,7 @@ function HomePage() {
               Find out why a business isn't showing up in the map pack
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground md:text-lg">
-              LocalRankLens scores a Google Business Profile against {CHECKS.length} weighted local
+              RankLens scores a Google Business Profile against {CHECKS.length} weighted local
               ranking checks and returns a prioritised list of fixes — the same audit an agency would
               charge for, in about ten minutes.
             </p>

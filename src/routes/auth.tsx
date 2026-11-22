@@ -21,13 +21,13 @@ export const Route = createFileRoute("/auth")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Sign in or create an account — LocalRankLens" },
+      { title: "Sign in or create an account — RankLens" },
       {
         name: "description",
         content:
           "Sign in to run Google Business Profile audits, track scores per location and export client-ready reports.",
       },
-      { property: "og:title", content: "Sign in — LocalRankLens" },
+      { property: "og:title", content: "Sign in — RankLens" },
       {
         property: "og:description",
         content: "Run your first Google Business Profile audit free.",

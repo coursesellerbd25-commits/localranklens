@@ -29,7 +29,7 @@ import {
 import { listUsers, setUserPlan, setUserRole } from "@/lib/api/admin.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/users")({
-  head: () => ({ meta: [{ title: "Users — LocalRankLens admin" }] }),
+  head: () => ({ meta: [{ title: "Users — RankLens admin" }] }),
   component: AdminUsersPage,
 });
 

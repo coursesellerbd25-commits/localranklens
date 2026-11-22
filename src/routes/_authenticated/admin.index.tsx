@@ -8,7 +8,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { getAdminOverview } from "@/lib/api/admin.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/")({
-  head: () => ({ meta: [{ title: "Admin overview — LocalRankLens" }] }),
+  head: () => ({ meta: [{ title: "Admin overview — RankLens" }] }),
   component: AdminOverviewPage,
 });
 

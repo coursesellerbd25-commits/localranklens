@@ -7,13 +7,13 @@ import { GUIDES, PLANNED_TOPICS } from "@/content/guides";
 export const Route = createFileRoute("/guides/")({
   head: () => ({
     meta: [
-      { title: "Local search guides — LocalRankLens" },
+      { title: "Local search guides — RankLens" },
       {
         name: "description",
         content:
           "Practical guides to Google Business Profile optimisation: categories, reviews, photos, posts and the full audit checklist.",
       },
-      { property: "og:title", content: "Local search guides — LocalRankLens" },
+      { property: "og:title", content: "Local search guides — RankLens" },
       {
         property: "og:description",
         content: "Plain-English guides to the profile factors that decide local visibility.",

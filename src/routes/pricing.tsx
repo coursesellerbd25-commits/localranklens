@@ -11,13 +11,13 @@ import { listPlans } from "@/lib/api/plans.functions";
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Pricing — LocalRankLens plans and limits" },
+      { title: "Pricing — RankLens plans and limits" },
       {
         name: "description",
         content:
           "Start free with three Google Business Profile audits a month. Paid plans add higher audit limits, more saved locations and white-label reports.",
       },
-      { property: "og:title", content: "Pricing — LocalRankLens" },
+      { property: "og:title", content: "Pricing — RankLens" },
       {
         property: "og:description",
         content: "Free, Solo and Agency plans for Google Business Profile audits.",

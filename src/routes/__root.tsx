@@ -82,19 +82,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "LocalRankLens — Google Business Profile audits for local businesses" },
+      { title: "RankLens — Google Business Profile audits for local businesses" },
       {
         name: "description",
         content:
           "Score any Google Business Profile against 26 local ranking checks and get a prioritised action list you can work through in an afternoon.",
       },
-      { property: "og:site_name", content: "LocalRankLens" },
+      { property: "og:site_name", content: "RankLens" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/localranklens.png", type: "image/x-icon" },
+      { rel: "icon", href: "/RankLens.png", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -108,7 +108,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          name: "LocalRankLens",
+          name: "RankLens",
           applicationCategory: "BusinessApplication",
           operatingSystem: "Web",
           description:

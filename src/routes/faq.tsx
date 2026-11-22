@@ -10,7 +10,7 @@ import {
 
 const FAQS = [
   {
-    q: "Does LocalRankLens connect to the Google API?",
+    q: "Does RankLens connect to the Google API?",
     a: "No. You record what you can see on the profile and the scoring engine grades it. That keeps the tool free of API quotas, keys and rate limits, and means audits work for profiles you don't own.",
   },
   {
@@ -38,13 +38,13 @@ const FAQS = [
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — how LocalRankLens audits work" },
+      { title: "FAQ — how RankLens audits work" },
       {
         name: "description",
         content:
           "How the scoring works, why there's no Google API connection, what happens at your monthly limit, and how client reporting works.",
       },
-      { property: "og:title", content: "FAQ — LocalRankLens" },
+      { property: "og:title", content: "FAQ — RankLens" },
       {
         property: "og:description",
         content: "Answers about scoring, limits, reporting and data handling.",

@@ -8,7 +8,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { getAdminTrends } from "@/lib/api/admin.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/analytics")({
-  head: () => ({ meta: [{ title: "Analytics — LocalRankLens admin" }] }),
+  head: () => ({ meta: [{ title: "Analytics — RankLens admin" }] }),
   component: AdminAnalyticsPage,
 });
 

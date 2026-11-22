@@ -6,13 +6,13 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 export const Route = createFileRoute("/cookies")({
   head: () => ({
     meta: [
-      { title: "Cookie Policy — LocalRankLens" },
+      { title: "Cookie Policy — RankLens" },
       {
         name: "description",
         content:
-          "The cookies and browser storage LocalRankLens uses: sign-in session and CSRF protection only, with no advertising or cross-site tracking.",
+          "The cookies and browser storage RankLens uses: sign-in session and CSRF protection only, with no advertising or cross-site tracking.",
       },
-      { property: "og:title", content: "Cookie Policy — LocalRankLens" },
+      { property: "og:title", content: "Cookie Policy — RankLens" },
       { property: "og:description", content: "Essential cookies only — no ad tracking." },
       { property: "og:url", content: "/cookies" },
     ],

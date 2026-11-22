@@ -5,13 +5,13 @@ import { PageHeader, Prose, SiteShell } from "@/components/site/SiteShell";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About LocalRankLens — why this audit exists" },
+      { title: "About RankLens — why this audit exists" },
       {
         name: "description",
         content:
-          "LocalRankLens turns a manual Google Business Profile review into a repeatable, weighted audit so small businesses and freelancers get consistent answers.",
+          "RankLens turns a manual Google Business Profile review into a repeatable, weighted audit so small businesses and freelancers get consistent answers.",
       },
-      { property: "og:title", content: "About LocalRankLens" },
+      { property: "og:title", content: "About RankLens" },
       {
         property: "og:description",
         content: "The thinking behind a weighted, repeatable local search audit.",
@@ -32,9 +32,9 @@ function AboutPage() {
         description="Every local business asks the same thing: why am I not showing up? The answer is usually a handful of profile gaps — but finding them by hand takes an hour and the result depends on who looked."
       />
       <Prose>
-        <h2>What LocalRankLens does</h2>
+        <h2>What RankLens does</h2>
         <p>
-          LocalRankLens encodes a local search audit into 26 weighted checks across six categories.
+          RankLens encodes a local search audit into 26 weighted checks across six categories.
           You record what is actually on the profile; the engine scores it the same way every time
           and returns a prioritised list of fixes with a recommendation for each one.
         </p>

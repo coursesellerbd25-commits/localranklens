@@ -12,7 +12,7 @@ import { SOURCE_LABELS, type SourceType } from "@/lib/verification/sources";
 
 export const Route = createFileRoute("/_authenticated/verify/")({
   head: () => ({
-    meta: [{ title: "Verified businesses — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Verified businesses — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: VerificationsPage,
 });

@@ -24,7 +24,7 @@ import { deleteAudit, listAudits } from "@/lib/api/audits.functions";
 
 export const Route = createFileRoute("/_authenticated/audits/")({
   head: () => ({
-    meta: [{ title: "Audit history — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Audit history — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: AuditsPage,
 });

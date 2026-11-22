@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/_authenticated/verify/$verificationId")({
   head: () => ({
-    meta: [{ title: "Business verification — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Business verification — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: VerificationDetailPage,
 });

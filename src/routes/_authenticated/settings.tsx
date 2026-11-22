@@ -14,7 +14,7 @@ import { claimFirstAdmin, updateMyProfile } from "@/lib/api/profile.functions";
 
 export const Route = createFileRoute("/_authenticated/settings")({
   head: () => ({
-    meta: [{ title: "Settings — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Settings — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: SettingsPage,
 });

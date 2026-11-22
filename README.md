@@ -1,4 +1,4 @@
-# LocalRankLens
+# RankLens
 
 **Find out why a local business isn't showing up on Google Maps — and exactly what to fix first.**
 
@@ -12,10 +12,10 @@
 ---
 
 ## 2. Project overview
-LocalRankLens is a SaaS web app that audits a Google Business Profile (GBP). The user records what is visible on a profile (categories, photos, reviews, hours, posts, website, etc.). A deterministic scoring engine checks it against **26 weighted checks in 6 categories** and returns a 0–100 score, an A–F grade and a fix list ranked by impact. Reports are saved, tracked per location over time and printable/exportable to PDF.
+RankLens is a SaaS web app that audits a Google Business Profile (GBP). The user records what is visible on a profile (categories, photos, reviews, hours, posts, website, etc.). A deterministic scoring engine checks it against **26 weighted checks in 6 categories** and returns a 0–100 score, an A–F grade and a fix list ranked by impact. Reports are saved, tracked per location over time and printable/exportable to PDF.
 
 ## 3. Problem it solves
-Local businesses lose calls and visits when their Google Maps listing is incomplete or weak, but most owners don't know what Google weighs. Freelancers and agencies do these audits manually in spreadsheets. LocalRankLens turns that into a repeatable, explainable checklist with prioritised actions.
+Local businesses lose calls and visits when their Google Maps listing is incomplete or weak, but most owners don't know what Google weighs. Freelancers and agencies do these audits manually in spreadsheets. RankLens turns that into a repeatable, explainable checklist with prioritised actions.
 
 ## 4. Key features
 - 26-check audit engine (pure TypeScript, no external API, versioned `engine_version`)
@@ -107,8 +107,8 @@ OWNER_GUIDE.md  TRANSFER_GUIDE.md
 ## 11. Installation & setup
 ### Getting the source code
 ```bash
-git clone https://github.com/YOUR-ACCOUNT/localranklens.git
-cd localranklens
+git clone https://github.com/YOUR-ACCOUNT/RankLens.git
+cd RankLens
 ```
 (Or download the ZIP from GitHub and unzip it.)
 
@@ -133,16 +133,16 @@ Fill in values (next section), apply the database migration, then run `bun run d
 | `SUPABASE_PUBLISHABLE_KEY` | server | yes | same as above |
 | `SUPABASE_SERVICE_ROLE_KEY` | **server secret** | yes | Supabase → API keys → secret/service_role. Never expose |
 | `BILLING_MODE` | server | no | `sandbox` (default, users may switch plans) or `live` (self-serve switching disabled) |
-| `PUBLIC_SITE_URL` | server | recommended in prod | Your canonical origin, e.g. `https://localranklens.com` |
+| `PUBLIC_SITE_URL` | server | recommended in prod | Your canonical origin, e.g. `https://RankLens.com` |
 
 **Development vs production:** use a separate Supabase project (or branch) for development. In production set `BILLING_MODE=live` once a payment provider is connected, and set `PUBLIC_SITE_URL`. `VITE_*` values are bundled into browser code and must never contain secrets. On Lovable Cloud these values are injected automatically.
 
 ## 13. Database setup
 1. **Create** a Supabase project (choose a region near your users).
 2. **Connection:** the app connects through the Supabase API using the env vars above — no direct connection string is needed at runtime.
-3. **Migrations:** open Supabase → SQL Editor, paste and run every file in `drizzle/migrations/` in filename order (currently `0000_localranklens_core_schema.sql`). Or with psql:
+3. **Migrations:** open Supabase → SQL Editor, paste and run every file in `drizzle/migrations/` in filename order (currently `0000_RankLens_core_schema.sql`). Or with psql:
    ```bash
-   psql "$DATABASE_URL" -f drizzle/migrations/0000_localranklens_core_schema.sql
+   psql "$DATABASE_URL" -f drizzle/migrations/0000_RankLens_core_schema.sql
    ```
    This creates enums, tables (`profiles`, `user_roles`, `plans`, `locations`, `audits`, `audit_findings`, `contact_messages`, `activity_events`), indexes, RLS policies, triggers (new-user profile creation, `updated_at`) and seeds the three plans.
 4. **Seed/demo data (optional):** edit the email in `supabase/seed-demo.sql` to an existing account, then run it. All rows are flagged `is_demo = true` and named "(demo)". Delete before listing: `DELETE FROM <table> WHERE is_demo;`

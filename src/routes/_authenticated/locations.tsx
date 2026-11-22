@@ -43,7 +43,7 @@ import {
 
 export const Route = createFileRoute("/_authenticated/locations")({
   head: () => ({
-    meta: [{ title: "Locations — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Locations — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: LocationsPage,
 });

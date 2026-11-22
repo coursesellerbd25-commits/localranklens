@@ -15,7 +15,7 @@ import { getUsage } from "@/lib/api/audits.functions";
 
 export const Route = createFileRoute("/_authenticated/billing")({
   head: () => ({
-    meta: [{ title: "Plan & billing — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Plan & billing — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: BillingPage,
 });

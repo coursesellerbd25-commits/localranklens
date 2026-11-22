@@ -21,7 +21,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-4">
-        <Link to="/" className="flex items-center gap-2" aria-label="LocalRankLens home">
+        <Link to="/" className="flex items-center gap-2" aria-label="RankLens home">
           <Logo />
         </Link>
 

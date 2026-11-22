@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * LocalRankLens design system.
+ * RankLens design system.
  *
  * Direction: "field instrument" — ink-dark navy surfaces, a signal teal for
  * primary actions, warm amber for warnings and lime for passes. Typography

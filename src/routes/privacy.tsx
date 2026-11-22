@@ -6,13 +6,13 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — LocalRankLens" },
+      { title: "Privacy Policy — RankLens" },
       {
         name: "description",
         content:
-          "What LocalRankLens stores, why, how long for, and how to delete it. Template policy to be reviewed before commercial use.",
+          "What RankLens stores, why, how long for, and how to delete it. Template policy to be reviewed before commercial use.",
       },
-      { property: "og:title", content: "Privacy Policy — LocalRankLens" },
+      { property: "og:title", content: "Privacy Policy — RankLens" },
       { property: "og:description", content: "Data stored, purposes, retention and deletion." },
       { property: "og:url", content: "/privacy" },
     ],
@@ -38,7 +38,7 @@ function PrivacyPage() {
       <Prose>
         <h2>Who we are</h2>
         <p>
-          LocalRankLens is a web application for auditing Google Business Profiles. The operator of
+          RankLens is a web application for auditing Google Business Profiles. The operator of
           this installation is the data controller; contact details are on the{" "}
           <Link to="/contact" className="underline">
             contact page

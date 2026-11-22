@@ -24,7 +24,7 @@ import { deleteWebsiteAudit, listWebsiteAudits } from "@/lib/api/website-audits.
 
 export const Route = createFileRoute("/_authenticated/website-audits/")({
   head: () => ({
-    meta: [{ title: "Website audits — LocalRankLens" }, { name: "robots", content: "noindex" }],
+    meta: [{ title: "Website audits — RankLens" }, { name: "robots", content: "noindex" }],
   }),
   component: WebsiteAuditsPage,
 });

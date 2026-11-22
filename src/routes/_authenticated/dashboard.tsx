@@ -13,7 +13,7 @@ import { listWebsiteAudits } from "@/lib/api/website-audits.functions";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard — LocalRankLens" },
+      { title: "Dashboard — RankLens" },
       { name: "robots", content: "noindex" },
     ],
   }),

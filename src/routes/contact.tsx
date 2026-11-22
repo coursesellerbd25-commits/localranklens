@@ -16,13 +16,13 @@ import { contactSchema, sendContactMessage } from "@/lib/api/contact.functions";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact LocalRankLens" },
+      { title: "Contact RankLens" },
       {
         name: "description",
         content:
           "Questions about audits, plans or reselling reports? Send a message and the site owner will reply by email.",
       },
-      { property: "og:title", content: "Contact — LocalRankLens" },
+      { property: "og:title", content: "Contact — RankLens" },
       { property: "og:description", content: "Send a question to the site owner." },
       { property: "og:url", content: "/contact" },
     ],

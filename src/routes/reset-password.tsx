@@ -13,7 +13,7 @@ export const Route = createFileRoute("/reset-password")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Set a new password — LocalRankLens" },
+      { title: "Set a new password — RankLens" },
       { name: "robots", content: "noindex" },
     ],
   }),

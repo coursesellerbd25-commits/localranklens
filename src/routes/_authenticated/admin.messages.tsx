@@ -10,7 +10,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { listMessages, setMessageStatus } from "@/lib/api/admin.functions";
 
 export const Route = createFileRoute("/_authenticated/admin/messages")({
-  head: () => ({ meta: [{ title: "Messages — LocalRankLens admin" }] }),
+  head: () => ({ meta: [{ title: "Messages — RankLens admin" }] }),
   component: AdminMessagesPage,
 });
 

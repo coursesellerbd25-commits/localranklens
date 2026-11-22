@@ -7,7 +7,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
         <MapPin className="h-4 w-4" strokeWidth={2.5} />
       </span>
       {compact ? null : (
-        <span className="font-display text-lg font-semibold tracking-tight">LocalRankLens</span>
+        <span className="font-display text-lg font-semibold tracking-tight">RankLens</span>
       )}
     </span>
   );
