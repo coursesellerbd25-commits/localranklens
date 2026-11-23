@@ -10,7 +10,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Logo } from "@/components/site/Logo";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable/index";
 
 const searchSchema = z.object({
   mode: z.enum(["signin", "signup", "reset"]).optional(),
@@ -128,17 +127,27 @@ function AuthPage() {
   };
 
   const signInWithGoogle = async () => {
-    setError(null);
-    const result = await lovable.auth.signInWithOAuth("google", {
-      redirect_uri: window.location.origin,
+  setError(null);
+  setBusy(true);
+
+  try {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: `${window.location.origin}/dashboard`,
+      },
     });
-    if (result.error) {
-      setError("Google sign-in didn't complete. Please try again.");
-      return;
-    }
-    if (result.redirected) return;
-    navigate({ to: destination });
-  };
+
+    if (error) throw error;
+  } catch (caught) {
+    setError(
+      caught instanceof Error
+        ? caught.message
+        : "Google sign-in failed. Please try again."
+    );
+    setBusy(false);
+  }
+};
 
   if (sent) {
     return (
